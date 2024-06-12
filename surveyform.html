@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+   <div id="title">
+   <h1>Survey Form</h1>
+   
+    <div>
+        <form action="/submit -form" method="POST" target="_blank">
+            
+            <label for="name"> Name:</label>
+           <input type="text" id="name" placeholder="Enter your name"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="demo@gmail.com" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="******" required><br><br>
+            <label for="age"> Age:</label>
+            <input type="number" id="age"><br><br>
+            <label for="">Which option best describes your role:</label>
+                    <input type="text" id="skills" list="skills-list" required><br><br>
+                    <datalist id="skills-list">
+                        <option value="Student">
+                        <option value="Professional">
+                        <option value="Executive">
+                            </datalist>
+                            <label for="">How likely is that you would recommend this course to your friend?</label>
+                            <br>
+                            <label for="definitely">
+                                <input type="radio" name="gender" value="definitely">
+                                definitely
+                                <br>
+                                <label for="may be">
+                                    <input type="radio" name="may be" value="may be">
+                                    May be
+                                <br>
+                                    <label for="not sure">
+                                        <input type="radio" name="not sure" value="not sure">
+                                        Not sure
+                                <br>
+                                </label><br><br>
+                                    <label for="">What do you like the most in this course:</label>
+                                    <input type="text" id="skillss" list="skills-lists" required><br><br>
+                                    <datalist id="skills-lists">
+                                        <option value="Front end projects">
+                                        <option value="Back end projects">
+                                        <option value="Data visualization">
+                                            </datalist>
+                                            <label for="comments">Things that should be improved in the future :</label>
+            <textarea id="comments" rows="3" cols="40" placeholder="Enter your comments"></textarea><br><br>
+            <button>Submit</button>
+            <button>Reset</button>
+        </form>
+
+       </div> 
+    </div>
+</body>
+</html>
